@@ -9,11 +9,17 @@ public class Memory {
     private final int M;
     private final int S;
     private final int P;
+    private int offsetSize;
+    private int[] virtualMemory;
+    private int[] pageTable;
+    private int[] memory;
+
     private Memory(final int v, final int m, final int s, final int p) {
-        V = v;
-        M = m;
-        S = s;
-        P = p;
+        this.V = v;
+        this.M = m;
+        this.S = s;
+        this.P = p;
+        this.offsetSize = (int)(Math.log(this.P * 1024) / Math.log(2));
     }
 
     public static Memory init(final int v, final int m, final int s, final int p) {
@@ -30,7 +36,7 @@ public class Memory {
 
     public void read(final int a) {
         try {
-            Integer x = null;
+            int x = 0;
             this.log(String.format("Value at address %d is %d", a, x));
         } catch (IOException e) {
             System.err.println("Error occurred while opening log file");
