@@ -1,0 +1,4 @@
+Init 64 32 8 4
+Write 5 11
+Read 11
+Exit

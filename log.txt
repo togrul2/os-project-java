@@ -1,0 +1,24 @@
+08/05/2022 16:02 -> Initialized
+08/05/2022 16:02 -> Written 5 to address 5
+08/05/2022 16:02 -> Value at address 5 is null
+08/05/2022 16:02 -> Exited
+08/05/2022 16:02 -> Initialized
+08/05/2022 16:02 -> Written 5 to address 5
+08/05/2022 16:02 -> Value at address 5 is null
+08/05/2022 16:02 -> Exited
+08/05/2022 16:03:12 -> Initialized
+08/05/2022 16:03:12 -> Written 5 to address 5
+08/05/2022 16:03:12 -> Value at address 5 is null
+08/05/2022 16:03:12 -> Exited
+08/05/2022 16:03:23 -> Initialized
+08/05/2022 16:03:23 -> Written 5 to address 5
+08/05/2022 16:03:23 -> Value at address 5 is null
+08/05/2022 16:03:23 -> Exited
+08/05/2022 16:04:05:459 -> Initialized
+08/05/2022 16:04:05:479 -> Written 5 to address 5
+08/05/2022 16:04:05:480 -> Value at address 5 is null
+08/05/2022 16:04:05:480 -> Exited
+08/05/2022 16:04:43.282 -> Initialized
+08/05/2022 16:04:43.302 -> Written 5 to address 5
+08/05/2022 16:04:43.302 -> Value at address 5 is null
+08/05/2022 16:04:43.303 -> Exited
