@@ -12,21 +12,29 @@ public class Memory {
     private final int S;
     private final int P;
     private int offsetSize;
-    private int[] virtualMemory;
-    private final Map<Integer, Integer> pageTable;
-    private int[] physicalMemory;
+//    private int[] virtualMemory;
+//    private final Map<Integer, Integer> pageTable;
+//    private int[] physicalMemory;
+    private Map<Integer, Integer[]> virtualMemory;
+    private Map<Integer, Integer[]> pageTable;
+    private Map<Integer, Integer[]> physicalMemory;
 
     private Memory(final int v, final int m, final int s, final int p) {
         this.V = v * 1024;
         this.M = m * 1024;
         this.S = s * 1024;
         this.P = p * 1024;
-        this.virtualMemory = new int[(int) (this.V / 4)];
-        this.physicalMemory = new int[(int) (this.M / 4)];
-        this.pageTable = new HashMap<>();
-        for (int i = 0; i < 64; i++) {
-            pageTable.put((i * this.P), ((i + 1) * this.P));
+        int nvm;
+//        this.virtualMemory = new int[(int) (this.V / 4)];
+        for (int i = 0; i < this.V; i++) {
+
         }
+
+//        this.physicalMemory = new int[(int) (this.M / 4)];
+//        this.pageTable = new HashMap<>();
+//        for (int i = 0; i < 64; i++) {
+//            pageTable.put((i * this.P), ((i + 1) * this.P));
+//        }
         this.offsetSize = (int) (Math.log(this.P) / Math.log(2));
     }
 
